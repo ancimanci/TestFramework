@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcomerce regression suite">
+	<parameter name="Browser" value="chrome"></parameter>
+	<test name="Regression Test" preserve-order="true">
+		<classes>
+			<class name="tests.UserCanSearchTest" />
+			<class name="tests.UserCanOpenLinkFromMenuTest" />
+			<class name="tests.UserCanUseFilterBrandInListingPageTest" />
+			<class name="tests.UserCanSubscripeToNewsLetterNeg" />
+			<class name="tests.UserCanSubscripeToNewsLettersuccess" />
+			<class name="tests.UserCanRegisterTest" />
+			<class name="tests.UserCanLoginTest" />
+			<class name="tests.AddProductTocartTest" />
+			<class name="tests.RemoveProductFromTheCart" />
+			<class name="tests.UserCanSeeProductDescriptionTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

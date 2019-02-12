@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcomerce regression suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.UserCanSeeProductDescriptionTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="TakeScreen"/>
+          <include name="UserSeeProductDescription"/>
+          <include name="stopDriver"/>
+          <include name="waitshoya"/>
+          <include name="waitshoya2"/>
+        </methods>
+      </class> <!-- tests.UserCanSeeProductDescriptionTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcomerce regression suite] -->
