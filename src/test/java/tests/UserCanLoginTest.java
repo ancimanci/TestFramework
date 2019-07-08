@@ -39,7 +39,8 @@ public String Avatar = "//a[@class='avatar']";
 
 	
 	@Test(dataProvider="logindata")
-	public void User_Login(String mail, String Password) {
+	public void User_Login(String mail, String Password) throws InterruptedException
+	{
 
 		HomeObject = new HomePage(driver);
 		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
@@ -50,7 +51,8 @@ public String Avatar = "//a[@class='avatar']";
 		try {
 
 			driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
-			WebDriverUtil.waitForVisible(driver, 5, By.xpath(Avatar)).click();
+			Assert.assertTrue(WebDriverUtil.isElementDisplayed(driver, By.xpath(Avatar)));
+
 
 		} catch (Exception e) {
 			System.out.println("Error happened" + e.getMessage());

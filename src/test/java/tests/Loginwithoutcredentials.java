@@ -21,7 +21,7 @@ public class Loginwithoutcredentials  extends TestBase {
 
 
         @Test
-        public void UserNoCredentials()
+        public void UserNoCredentials()throws InterruptedException
         {
             HomeObject = new HomePage(driver);
             driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
