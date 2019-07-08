@@ -12,54 +12,54 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcilReader {
 
-	static FileInputStream fis = null ;
-	String filpath ;
+    static FileInputStream fis = null ;
+    String filpath ;
 
-	public FileInputStream getFileInputStream() 
-	{
-		// this location for my file
-		filpath = System.getProperty("user.dir")+"/src/test/java/data/UserData1.xlsx" ;
-		File srcfile = new File(filpath);
-		try {
-			fis = new FileInputStream(srcfile);
-		} catch (FileNotFoundException e) {
+    public FileInputStream getFileInputStream()
+    {
+        // this location for my file
+        filpath = System.getProperty("user.dir")+"/src/test/java/Datatest/UserData.xlsx" ;
+        File srcfile = new File(filpath);
+        try {
+            fis = new FileInputStream(srcfile);
+        } catch (FileNotFoundException e) {
 
-			System.out.println("Test Data file not found " + e.getMessage());
-			System.exit(0);
-		}
+            System.out.println("Test Data file not found " + e.getMessage());
+            System.exit(0);
+        }
 
-		return fis;
+        return fis;
 
-	}
+    }
 
-	@SuppressWarnings("deprecation")
-	public Object[][] getExcelData (int sheetnum , int lastColum) throws IOException
-	{
-		fis = getFileInputStream();
+    @SuppressWarnings("deprecation")
+    public Object[][] getExcelData (int sheetnum , int lastColum) throws IOException
+    {
+        fis = getFileInputStream();
 
-		// here we need install org.apache.poi from maven
+        // here we need install org.apache.poi from maven
 
 
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheet = wb.getSheetAt(sheetnum);
+        XSSFWorkbook wb = new XSSFWorkbook(fis);
+        XSSFSheet sheet = wb.getSheetAt(sheetnum);
 
-		int TotalNumOfRows = (sheet.getLastRowNum()+1);
-		int TotalNumOfCols = lastColum ;
+        int TotalNumOfRows = (sheet.getLastRowNum()+1);
+        int TotalNumOfCols = lastColum ;
 
-		String [][] arrayExcelData = new String [TotalNumOfRows][TotalNumOfCols];
+        String [][] arrayExcelData = new String [TotalNumOfRows][TotalNumOfCols];
 
-		for (int i = 0; i < TotalNumOfRows; i++) 
-		{
-			for (int j = 0; j < TotalNumOfCols ; j++) {
-				XSSFRow row = sheet.getRow(i);
-				arrayExcelData[i][j] = row.getCell(j).toString();
-			}
+        for (int i = 0; i < TotalNumOfRows; i++)
+        {
+            for (int j = 0; j < TotalNumOfCols ; j++) {
+                XSSFRow row = sheet.getRow(i);
+                arrayExcelData[i][j] = row.getCell(j).toString();
+            }
 
-		}
+        }
 
-		wb.close();
-		return arrayExcelData;
+        wb.close();
+        return arrayExcelData;
 
-	}
+    }
 
 }
