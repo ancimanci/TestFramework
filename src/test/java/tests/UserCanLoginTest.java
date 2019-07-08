@@ -28,7 +28,7 @@ public class UserCanLoginTest extends TestBase {
 	{
 		// get data from exl reader
 		ExcilReader reader = new ExcilReader();
-		return reader.getExcelData(1, 4) ;
+		return reader.getExcelData(0, 2) ;
 
 	}
 	
