@@ -34,7 +34,7 @@ public class UserCanLoginTest extends TestBase {
 	
 	
 	@Test(dataProvider="logindata")
-	public void User_Login(String Fname, String Lname, String mail, String Password) 
+	public void User_Login(String mail, String Password)
 	{
 		HomeObject = new HomePage(driver);
 		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
