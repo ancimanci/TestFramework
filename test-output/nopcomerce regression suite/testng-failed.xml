@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [nopcomerce regression suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [nopcomerce regression suite]">
   <parameter name="Browser" value="chrome"/>
   <test thread-count="5" name="Regression Test(failed)">
     <classes>
-      <class name="tests.UserCanSeeProductDescriptionTest">
+      <class name="tests.UserCanLoginTest">
         <methods>
           <include name="startDriver"/>
           <include name="TakeScreen"/>
-          <include name="UserSeeProductDescription"/>
           <include name="stopDriver"/>
+          <include name="User_Login"/>
           <include name="waitshoya"/>
           <include name="waitshoya2"/>
         </methods>
-      </class> <!-- tests.UserCanSeeProductDescriptionTest -->
+      </class> <!-- tests.UserCanLoginTest -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [nopcomerce regression suite] -->

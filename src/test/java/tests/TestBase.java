@@ -40,7 +40,7 @@ public class TestBase{
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		driver.get("http://mazloum_home:Max@123@mazloum-home.netservex.com/");
+		driver.get("https://github.com/");
 		driver.manage().deleteAllCookies();
 
 	}

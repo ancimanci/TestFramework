@@ -4,7 +4,10 @@ package tests;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -25,7 +28,7 @@ public class UserCanLoginTest extends TestBase {
 	{
 		// get data from exl reader
 		ExcilReader reader = new ExcilReader();
-		return reader.getExcelData(0, 4) ;
+		return reader.getExcelData(1, 4) ;
 
 	}
 	
@@ -39,7 +42,9 @@ public class UserCanLoginTest extends TestBase {
 		LoginObject = new UserLoginPage(driver);
 		LoginObject.Userlogin(mail , Password);
 		try {
+
 		driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+
 		MyaccountObject = new MyAccountPage(driver);
 		Assert.assertTrue(MyaccountObject.PageTitle.getText().equalsIgnoreCase("Your account"));
 		}catch(Exception e)

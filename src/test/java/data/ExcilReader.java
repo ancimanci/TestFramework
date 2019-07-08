@@ -18,7 +18,7 @@ public class ExcilReader {
 	public FileInputStream getFileInputStream() 
 	{
 		// this location for my file
-		filpath = System.getProperty("user.dir")+"/src/test/java/data/UserData.xlsx" ;
+		filpath = System.getProperty("user.dir")+"/src/test/java/data/UserData1.xlsx" ;
 		File srcfile = new File(filpath);
 		try {
 			fis = new FileInputStream(srcfile);
