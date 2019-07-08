@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [nopcomerce regression suite]">
   <parameter name="Browser" value="chrome"/>
-  <test thread-count="5" name="Regression Test(failed)">
+  <test thread-count="5" name="Regression Test(failed)" parallel="methods">
     <classes>
       <class name="tests.UserCanLoginTest">
         <methods>
           <include name="startDriver"/>
           <include name="TakeScreen"/>
+          <include name="User_Login" invocation-numbers="0"/>
           <include name="stopDriver"/>
-          <include name="User_Login"/>
           <include name="waitshoya"/>
           <include name="waitshoya2"/>
         </methods>

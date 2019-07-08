@@ -20,14 +20,13 @@ public class UserLoginPage extends PageBase {
 	@FindBy(xpath="//input[@id='password']")
 	WebElement PasswordTxtField ;
 
-	@FindBy(linkText="Forgot your password?")
+	@FindBy(xpath="//*[@id='login']//a[@class='label-link']")
 	WebElement forgetPasswordLink ;
 
-	@FindBy(xpath="//input[@type='submit']")
-	WebElement IncorrectUserName ;
 
 	@FindBy(xpath="//input[@type='submit']")
 	WebElement LoginButton ;
+
 
 
 
@@ -38,6 +37,9 @@ public class UserLoginPage extends PageBase {
 		ClickButton(LoginButton);
 
 	}
+
+
+
 	public void UserClick()
 	{
 		ClickButton(LoginButton);

@@ -3,6 +3,7 @@ package tests;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
@@ -22,8 +23,8 @@ public class TestBase{
 
 	/*the parameter come from testng.xml 
 	 * we add option i case i dont give parameter from xml file 
-	 */ 
-	
+	 */
+
 	@BeforeSuite
 	@Parameters({"Browser"})
 	public void startDriver(@Optional("chrome") String BrowserName) 
@@ -57,14 +58,7 @@ public class TestBase{
 		}
 	}
 
-	
-	
-	@AfterClass
-	public void waitshoya() 
-	{
-		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
-	}
-	
+
 	
 	@BeforeClass
 	public void waitshoya2() 
@@ -75,6 +69,6 @@ public class TestBase{
 	@AfterSuite
 	public void stopDriver() 
 	{
-		//driver.quit();
+		driver.quit();
 	}
 }

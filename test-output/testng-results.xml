@@ -1,13 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcomerce regression suite" duration-ms="835" started-at="2019-07-08T07:10:53Z" finished-at="2019-07-08T07:10:54Z">
+  <suite name="nopcomerce regression suite" duration-ms="7147" started-at="2019-07-08T17:28:35Z" finished-at="2019-07-08T17:28:42Z">
     <groups>
     </groups>
-    <test name="Regression Test" duration-ms="835" started-at="2019-07-08T07:10:53Z" finished-at="2019-07-08T07:10:54Z">
+    <test name="Regression Test" duration-ms="7147" started-at="2019-07-08T17:28:35Z" finished-at="2019-07-08T17:28:42Z">
+      <class name="tests.Loginwithoutcredentials">
+        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2]" name="waitshoya2" is-config="true" duration-ms="17" started-at="2019-07-08T17:28:35Z" finished-at="2019-07-08T17:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitshoya2 -->
+        <test-method status="PASS" signature="UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2]" name="UserNoCredentials" duration-ms="1699" started-at="2019-07-08T17:28:35Z" finished-at="2019-07-08T17:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserNoCredentials -->
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2]" name="close" is-config="true" duration-ms="5066" started-at="2019-07-08T17:28:37Z" finished-at="2019-07-08T17:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2]" name="TakeScreen" is-config="true" duration-ms="1" started-at="2019-07-08T17:28:42Z" finished-at="2019-07-08T17:28:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserNoCredentials status=SUCCESS method=Loginwithoutcredentials.UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreen -->
+        <test-method status="FAIL" signature="waitshoya()[pri:0, instance:tests.Loginwithoutcredentials@19dc67c2]" name="waitshoya" is-config="true" duration-ms="102" started-at="2019-07-08T17:28:42Z" finished-at="2019-07-08T17:28:42Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.pageLoadTimeout(RemoteWebDriver.java:788)
+at tests.TestBase.waitshoya(TestBase.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitshoya -->
+      </class> <!-- tests.Loginwithoutcredentials -->
       <class name="tests.UserCanLoginTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserCanLoginTest@4516af24]" name="startDriver" is-config="true" duration-ms="8063" started-at="2019-07-08T07:10:45Z" finished-at="2019-07-08T07:10:53Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="startDriver" is-config="true" duration-ms="11946" started-at="2019-07-08T17:28:23Z" finished-at="2019-07-08T17:28:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,61 +98,158 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.UserCanLoginTest@4516af24]" name="waitshoya2" is-config="true" duration-ms="6" started-at="2019-07-08T07:10:53Z" finished-at="2019-07-08T07:10:53Z">
+        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="waitshoya2" is-config="true" duration-ms="22" started-at="2019-07-08T17:28:35Z" finished-at="2019-07-08T17:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitshoya2 -->
-        <test-method status="SKIP" signature="User_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserCanLoginTest@4516af24]" name="User_Login" duration-ms="0" started-at="2019-07-08T07:10:54Z" data-provider="logindata" finished-at="2019-07-08T07:10:54Z">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="FAIL" signature="User_Login(java.lang.String, java.lang.String)[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="User_Login" duration-ms="3477" started-at="2019-07-08T17:28:36Z" data-provider="logindata" finished-at="2019-07-08T17:28:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ancimanci@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[janaluka1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[timeout
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-Caused by: java.lang.NullPointerException
-at data.ExcilReader.getExcelData(ExcilReader.java:55)
-at tests.UserCanLoginTest.Logindata(UserCanLoginTest.java:31)
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy17.click(Unknown Source)
+at pages.PageBase.ClickButton(PageBase.java:27)
+at pages.HomePage.openLoginPage(HomePage.java:24)
+at tests.UserCanLoginTest.User_Login(UserCanLoginTest.java:46)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 21 more
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_Login -->
-        <test-method status="PASS" signature="waitshoya()[pri:0, instance:tests.UserCanLoginTest@4516af24]" name="waitshoya" is-config="true" duration-ms="15" started-at="2019-07-08T07:10:54Z" finished-at="2019-07-08T07:10:54Z">
+        <test-method status="FAIL" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="TakeScreen" is-config="true" duration-ms="2229" started-at="2019-07-08T17:28:39Z" finished-at="2019-07-08T17:28:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=User_Login status=FAILURE method=UserCanLoginTest.User_Login(java.lang.String, java.lang.String)[pri:0, instance:tests.UserCanLoginTest@77be656f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.43.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 98b07a9fe9eee7e025b11fca0e327523
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at utilities.Helper.CapureScreenShot(Helper.java:29)
+at tests.TestBase.TakeScreen(TestBase.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreen -->
+        <test-method status="SKIP" signature="waitshoya()[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="waitshoya" is-config="true" duration-ms="0" started-at="2019-07-08T17:28:42Z" finished-at="2019-07-08T17:28:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitshoya -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserCanLoginTest@4516af24]" name="stopDriver" is-config="true" duration-ms="0" started-at="2019-07-08T07:10:54Z" finished-at="2019-07-08T07:10:54Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserCanLoginTest@77be656f]" name="stopDriver" is-config="true" duration-ms="529" started-at="2019-07-08T17:28:42Z" finished-at="2019-07-08T17:28:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->

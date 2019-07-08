@@ -1,22 +1,23 @@
 package tests;
 
-import data.ExcilReader;
-import org.testng.Assert;
+import org.openqa.selenium.By;
+
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.MyAccountPage;
 import pages.UserLoginPage;
+import util.WebDriverUtil;
+import org.testng.Assert;
 
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+
 
 public class Loginwithoutcredentials  extends TestBase {
 
         HomePage HomeObject ;
         UserLoginPage LoginObject;
-        MyAccountPage MyaccountObject ;
+
 
 
         @Test
@@ -30,9 +31,8 @@ public class Loginwithoutcredentials  extends TestBase {
             try {
 
                 driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
+           // Assert.assertTrue(WebDriverUtil.isElementDisplayed(driver, ));
 
-                MyaccountObject = new MyAccountPage(driver);
-                Assert.assertTrue(MyaccountObject.PageTitle.getText().equalsIgnoreCase("Your account"));
             }catch(Exception e)
             {
                 System.out.println("Error happened" + e.getMessage());
