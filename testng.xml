@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcomerce regression suite">
+	<parameter name="Browser" value="chrome"></parameter>
+	<test name="Regression Test" preserve-order="true" thread-count="3" parallel="methods">
+		<classes>
+
+			<class name="tests.UserCanLoginTest" />
+			<class name="tests.Loginwithoutcredentials" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
