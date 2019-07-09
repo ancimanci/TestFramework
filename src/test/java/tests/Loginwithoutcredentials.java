@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.UserLoginPage;
+import pages.InvalidLogin;
 import util.WebDriverUtil;
 import org.testng.Assert;
 
@@ -17,6 +18,7 @@ public class Loginwithoutcredentials  extends TestBase {
 
         HomePage HomeObject ;
         UserLoginPage LoginObject;
+        InvalidLogin InvalidObject;
 
 
 
@@ -31,7 +33,9 @@ public class Loginwithoutcredentials  extends TestBase {
             try {
 
                 driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
-           // Assert.assertTrue(WebDriverUtil.isElementDisplayed(driver, ));
+                InvalidObject = new InvalidLogin(driver);
+                Assert.assertTrue(InvalidObject.IncorrectElement.getText().contains("Incorrect"));
+
 
             }catch(Exception e)
             {

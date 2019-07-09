@@ -1,10 +1,7 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterSuite;
-import util.WebDriverUtil;
+import pages.AccountPage;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -23,9 +20,8 @@ public class UserCanLoginTest extends TestBase {
 
 	HomePage HomeObject ;
 	UserLoginPage LoginObject;
+	AccountPage AccountObject;
 
-
-public String Avatar = "//a[@class='avatar']";
 
 	@DataProvider(name="logindata")
 	public Object [][] Logindata() throws IOException
@@ -51,7 +47,8 @@ public String Avatar = "//a[@class='avatar']";
 		try {
 
 			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			Assert.assertTrue(WebDriverUtil.isElementPresent(driver, By.xpath(Avatar)));
+			AccountObject = new AccountPage(driver);
+			Assert.assertTrue(AccountObject.NewButton.getText().contains("New"));
 
 
 		} catch (Exception e) {
