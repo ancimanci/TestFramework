@@ -4,16 +4,6 @@
   <parameter name="Browser" value="chrome"/>
   <test thread-count="5" name="Regression Test(failed)" parallel="methods">
     <classes>
-      <class name="tests.Loginwithoutcredentials">
-        <methods>
-          <include name="startDriver"/>
-          <include name="TakeScreen"/>
-          <include name="close"/>
-          <include name="stopDriver"/>
-          <include name="UserNoCredentials"/>
-          <include name="waitshoya2"/>
-        </methods>
-      </class> <!-- tests.Loginwithoutcredentials -->
       <class name="tests.UserCanLoginTest">
         <methods>
           <include name="startDriver"/>

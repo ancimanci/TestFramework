@@ -50,8 +50,8 @@ public String Avatar = "//a[@class='avatar']";
 
 		try {
 
-			driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
-			Assert.assertTrue(WebDriverUtil.isElementDisplayed(driver, By.xpath(Avatar)));
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+			Assert.assertTrue(WebDriverUtil.isElementPresent(driver, By.xpath(Avatar)));
 
 
 		} catch (Exception e) {

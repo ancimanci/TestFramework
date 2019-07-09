@@ -1,157 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="2" total="4" passed="0">
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcomerce regression suite" duration-ms="6620" started-at="2019-07-08T21:39:01Z" finished-at="2019-07-08T21:39:08Z">
+  <suite name="nopcomerce regression suite" duration-ms="3489" started-at="2019-07-08T21:41:07Z" finished-at="2019-07-08T21:41:10Z">
     <groups>
     </groups>
-    <test name="Regression Test" duration-ms="6620" started-at="2019-07-08T21:39:01Z" finished-at="2019-07-08T21:39:08Z">
+    <test name="Regression Test" duration-ms="3489" started-at="2019-07-08T21:41:07Z" finished-at="2019-07-08T21:41:10Z">
       <class name="tests.Loginwithoutcredentials">
-        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="waitshoya2" is-config="true" duration-ms="8" started-at="2019-07-08T21:39:01Z" finished-at="2019-07-08T21:39:01Z">
+        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="waitshoya2" is-config="true" duration-ms="5" started-at="2019-07-08T21:41:07Z" finished-at="2019-07-08T21:41:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitshoya2 -->
-        <test-method status="FAIL" signature="UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="UserNoCredentials" duration-ms="3206" started-at="2019-07-08T21:39:01Z" finished-at="2019-07-08T21:39:05Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,'login')]"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
-*** Element info: {Using=xpath, value=//a[contains(@href,'login')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,'login')]"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
-*** Element info: {Using=xpath, value=//a[contains(@href,'login')]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at pages.PageBase.ClickButton(PageBase.java:27)
-at pages.HomePage.openLoginPage(HomePage.java:24)
-at tests.Loginwithoutcredentials.UserNoCredentials(Loginwithoutcredentials.java:28)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="UserNoCredentials" duration-ms="1174" started-at="2019-07-08T21:41:07Z" finished-at="2019-07-08T21:41:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserNoCredentials -->
-        <test-method status="PASS" signature="close()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="close" is-config="true" duration-ms="3094" started-at="2019-07-08T21:39:05Z" finished-at="2019-07-08T21:39:08Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="close" is-config="true" duration-ms="1816" started-at="2019-07-08T21:41:08Z" finished-at="2019-07-08T21:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="FAIL" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="TakeScreen" is-config="true" duration-ms="140" started-at="2019-07-08T21:39:08Z" finished-at="2019-07-08T21:39:08Z">
+        <test-method status="PASS" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.Loginwithoutcredentials@77be656f]" name="TakeScreen" is-config="true" duration-ms="5" started-at="2019-07-08T21:41:10Z" finished-at="2019-07-08T21:41:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserNoCredentials status=FAILURE method=Loginwithoutcredentials.UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@77be656f] output={null}]]]>
+                <![CDATA[[TestResult name=UserNoCredentials status=SUCCESS method=Loginwithoutcredentials.UserNoCredentials()[pri:0, instance:tests.Loginwithoutcredentials@77be656f] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[no such session
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-at utilities.Helper.CapureScreenShot(Helper.java:29)
-at tests.TestBase.TakeScreen(TestBase.java:57)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreen -->
       </class> <!-- tests.Loginwithoutcredentials -->
       <class name="tests.UserCanLoginTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="startDriver" is-config="true" duration-ms="4920" started-at="2019-07-08T21:38:56Z" finished-at="2019-07-08T21:39:01Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="startDriver" is-config="true" duration-ms="8318" started-at="2019-07-08T21:40:59Z" finished-at="2019-07-08T21:41:07Z">
           <params>
             <param index="0">
               <value>
@@ -162,11 +43,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="waitshoya2" is-config="true" duration-ms="7" started-at="2019-07-08T21:39:01Z" finished-at="2019-07-08T21:39:01Z">
+        <test-method status="PASS" signature="waitshoya2()[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="waitshoya2" is-config="true" duration-ms="6" started-at="2019-07-08T21:41:07Z" finished-at="2019-07-08T21:41:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitshoya2 -->
-        <test-method status="FAIL" signature="User_Login(java.lang.String, java.lang.String)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="User_Login" duration-ms="5658" started-at="2019-07-08T21:39:02Z" data-provider="logindata" finished-at="2019-07-08T21:39:08Z">
+        <test-method status="FAIL" signature="User_Login(java.lang.String, java.lang.String)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="User_Login" duration-ms="2648" started-at="2019-07-08T21:41:08Z" data-provider="logindata" finished-at="2019-07-08T21:41:10Z">
           <params>
             <param index="0">
               <value>
@@ -179,32 +60,28 @@ at java.lang.Thread.run(Thread.java:748)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,'login')]"}
-  (Session info: chrome=75.0.3770.100)
+              <![CDATA[no such session
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
-*** Element info: {Using=xpath, value=//a[contains(@href,'login')]}]]>
+Session ID: 0e610932e953a91a345db035cc8134c9
+*** Element info: {Using=xpath, value=//input[@id='login_field']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href,'login')]"}
-  (Session info: chrome=75.0.3770.100)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
-*** Element info: {Using=xpath, value=//a[contains(@href,'login')]}
+Session ID: 0e610932e953a91a345db035cc8134c9
+*** Element info: {Using=xpath, value=//input[@id='login_field']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -223,10 +100,10 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at pages.PageBase.ClickButton(PageBase.java:27)
-at pages.HomePage.openLoginPage(HomePage.java:24)
-at tests.UserCanLoginTest.User_Login(UserCanLoginTest.java:47)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at pages.PageBase.SetText(PageBase.java:35)
+at pages.UserLoginPage.Userlogin(UserLoginPage.java:35)
+at tests.UserCanLoginTest.User_Login(UserCanLoginTest.java:49)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,11 +119,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_Login -->
-        <test-method status="FAIL" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="TakeScreen" is-config="true" duration-ms="318" started-at="2019-07-08T21:39:08Z" finished-at="2019-07-08T21:39:08Z">
+        <test-method status="FAIL" signature="TakeScreen(org.testng.ITestResult)[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="TakeScreen" is-config="true" duration-ms="13" started-at="2019-07-08T21:41:10Z" finished-at="2019-07-08T21:41:10Z">
           <params>
             <param index="0">
               <value>
@@ -260,20 +137,20 @@ at java.lang.Thread.run(Thread.java:748)
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88]]>
+Session ID: 0e610932e953a91a345db035cc8134c9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: no such session
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'MININT-KJIB5K8', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'MININT-KJIB5K8', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\abrkic\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 153dd3413c008bf677621c7d2f8c5b88
+Session ID: 0e610932e953a91a345db035cc8134c9
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -312,7 +189,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreen -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="stopDriver" is-config="true" duration-ms="538" started-at="2019-07-08T21:39:08Z" finished-at="2019-07-08T21:39:09Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserCanLoginTest@797badd3]" name="stopDriver" is-config="true" duration-ms="525" started-at="2019-07-08T21:41:10Z" finished-at="2019-07-08T21:41:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
